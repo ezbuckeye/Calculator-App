@@ -1,0 +1,114 @@
+body {
+	background-color: #adacac;
+	padding: 0;
+	margin: 0;
+}
+
+.calculator {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.calculator-section {
+	margin: 0 20px;
+	border: 5px solid black;
+	border-radius: 7px;
+	display: inline-block;
+}
+  
+.textField {
+	height: 80px;
+	background-color: #adacac;
+	font-family: monospace;
+	border-bottom: 5px solid black;
+	padding: 10px 20px;
+	text-align: right;
+	font-size: 30px;
+	position: relative;
+}
+
+.textField #previous {
+	margin: 0;
+	opacity: .4;
+	font-size: 20px;
+	height: 20px;
+	overflow: hidden;
+}
+
+.textField #output {
+	margin: 0;
+}
+
+#memory {
+	width: 100%;
+	border: none;
+	/* background-color: #bb0000; */
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+}
+  
+table {
+	margin: auto;
+	width: 50%;
+	border: 3px;
+	padding: 10px;
+	text-align: center;
+}
+  
+table button {
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: #bb0000;
+	color: white;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+}
+  
+table button:hover {
+	background-color: #646161;
+}
+  
+/* Created 7/4/2022 by Jeremy Mach */
+.memory {
+	display: block;
+	height: 400px;
+	width: 10%;
+	overflow-y: scroll;
+	font-family: monospace;
+	font-size: 20px;
+	border: 5px solid black;
+	border-radius: 7px;
+	background-color: #a9a9a9;
+}
+  
+#sci-mode {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #dc0000;
+}
+
+#sci-mode:hover {
+    background-color: #646161;
+}
+
+button.mode {
+	display: none;
+}
+
+button.mode.visbility {
+	display: block;
+}

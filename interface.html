@@ -1,0 +1,86 @@
+<!-- Edited 7/3/2022 by Max Zahner: made table, functions and buttons -->
+<!-- Edited 7/3/2022 by Yinchu: changed the order of number -->
+<!-- Edited 7/4/2022 by Yiming Liu: added name to each button -->
+<!-- Edited 7/6/2022 by Yinchu Sun: added value to "clear(C)" button -->
+<!-- Edited 7/72022 by Jeremy Mach: added table for memory -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="styles/interface.css" />
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.2.0/math.js'></script>
+</head>
+
+<body>
+	<div class="calculator">
+		<button name="mode" id="sci-mode" value="sci">Scientific</button>
+		<div class="calculator-section">
+			<div class="textField">
+				<p id="previous">0</p>
+				<p id="output">0</p>
+			</div>
+			<table class="calculation-area">
+				<tr>
+					<td><button class="memory-button" id="memoryClear">MC</button></td>
+					<td><button class="memory-button" id="memoryRecall">MR</button></td>
+					<td><button class="memory-button" id="memoryAdd">M+</button></td>
+					<td><button class="memory-button" id="memorySubtract">M-</button></td>
+					<td><button class="memory-button" id="memoryStore">MS</button></td>
+					<td><button class="mode" name="singleOperandOperation" id="1/x" value="^-1">1/x</button></td>
+					<td><button class="mode" name="singleOperandOperation" id="!" value="!">n!</button></td>
+				</tr>
+				<tr>
+					<td><button name="clear" id="clearEntry">CE</button></td>
+					<td><button name="operation" id="+" value="+">+</button></td>
+					<td><button name="digit" id="7">7</button></td>
+					<td><button name="digit" id="8">8</button></td>
+					<td><button name="digit" id="9">9</button></td>
+					<td><button class="mode" name="singleOperandOperation" id="@" value="sqrt">&radic;</button></td>
+					<td><button class="mode" name="operation" id="%" value="%">%</button></td>
+				</tr>
+				<tr>
+					<td><button name="clear" id="clearAll">C</button></td>
+					<td><button name="operation" id="-" value="-">-</button></td>
+					<td><button name="digit" id="4">4</button></td>
+					<td><button name="digit" id="5">5</button></td>
+					<td><button name="digit" id="6">6</button></td>
+					<td><button class="mode" name="singleOperandOperation" id="^2" value="^2">x<sup>2</sup></button>
+					</td>
+					<td><button class="mode" name="singleOperandOperation" id="ln" value="ln">ln</button></td>
+				</tr>
+				<tr>
+					<td><button name="clear" id="delete">DEL</button></td>
+					<td><button name="operation" id="*" value="*">&times;</button></td>
+					<td><button name="digit" id="1">1</button></td>
+					<td><button name="digit" id="2">2</button></td>
+					<td><button name="digit" id="3">3</button></td>
+					<td><button class="mode" name="singleOperandOperation" id="|" value="abs">|x|</button></td>
+					<td><button class="mode" name="singleOperandOperation" id="log" value="log">log</button></td>
+				</tr>
+				<tr>
+					<td><button name="singleOperandOperation" id="negate" value="+/-">+/-</button></td>
+					<td><button name="operation" id="/" value="/">&divide;</button></td>
+					<td><button name="digit" id="0">0</button></td>
+					<td><button name="digit" id=".">.</button></td>
+					<td><button id="equals" value="=">=</button></td>
+					<td><button class="mode" name="left" id="(" value="(">(</button></td>
+					<td><button class="mode" name="right" id=")" value=")">)</button></td>
+				</tr>
+			</table>
+		</div>
+		<div class="memory">
+			<table id="memory-table">
+
+			</table>
+
+		</div>
+	</div>
+</body>
+<script src="scripts/memoryFunction.js"></script>
+<script src="scripts/arithmetic.js"></script>
+<script src="scripts/sciArithmetic.js"></script>
+<script src="scripts/controller.js"></script>
+<script src="scripts/clear.js"></script>
+
+</html>
