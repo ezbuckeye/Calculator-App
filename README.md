@@ -1,4 +1,4 @@
-# Project-5-Runtime-Terror
+# Calculator App
 
 How to Run the Project:
     Open interface.html in file browser. Use GUI on Firefox Browser in Ubuntu VM
@@ -33,7 +33,7 @@ How to Run the Project:
 
 
 
-Teammates contributions-
+Teammates contributions
 
 Jihao Zhang:
 
