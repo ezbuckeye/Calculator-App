@@ -6,12 +6,12 @@
 ## 2. Test Plan
 
 ### Term explanation:
-    "digit" buttons are 0-9 and "."
-    "binary operation" buttons are "+", "-", x", "/"
-    "unary operation" buttons are "+/-", "x^2", "|x|", "2√x", "1/x", "%", "log", "ln", "n!"
-    "equal" button is "="
-    "memory" button are "MS", "M+", "M-", "MC", "MR"
-    "clear" button are "C", "CE", "DEL"
+    - "digit" buttons are 0-9 and "."
+    - "binary operation" buttons are "+", "-", x", "/"
+    - "unary operation" buttons are "+/-", "x^2", "|x|", "2√x", "1/x", "%", "log", "ln", "n!"
+    - "equal" button is "="
+    - "memory" button are "MS", "M+", "M-", "MC", "MR"
+    - "clear" button are "C", "CE", "DEL"
 
 ### Calculation Related:
 #### 1. appendNumber(): 
