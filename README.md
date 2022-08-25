@@ -4,8 +4,10 @@ This is a functional calculator mimicking the behavior of Window’s calculator 
 It is built by a team of 5 in OSU CSE3901 course, following Agile practices and leveraged Test-driven Development with 100+ test cases to robustify the app.
 
 ## Screenshots
-![Basic Mode](/screenshots/basic.png?raw=true "Basic Mode")
-![Scientific Mode](/screenshots/scientific.png?raw=true "Scientific Mode")
+<div align="center">
+    <img src="/screenshots/basic.png" width="200px"</img> 
+    <img src="/screenshots/scientific.png" width="200px"</img> 
+</div>
 
 ## Test Plan
 
