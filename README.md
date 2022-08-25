@@ -6,12 +6,12 @@
 ## 2. Test Plan
 
 ### Term explanation:
-    * "digit" buttons are 0-9 and "."
-    * "binary operation" buttons are "+", "-", x", "/"
-    * "unary operation" buttons are "+/-", "x^2", "|x|", "2√x", "1/x", "%", "log", "ln", "n!"
-    * "equal" button is "="
-    * "memory" button are "MS", "M+", "M-", "MC", "MR"
-    * "clear" button are "C", "CE", "DEL"
+* "digit" buttons are 0-9 and "."
+* "binary operation" buttons are "+", "-", x", "/"
+* "unary operation" buttons are "+/-", "x^2", "|x|", "2√x", "1/x", "%", "log", "ln", "n!"
+* "equal" button is "="
+* "memory" button are "MS", "M+", "M-", "MC", "MR"
+* "clear" button are "C", "CE", "DEL"
 
 ### Calculation Related:
 #### 1. appendNumber(): 
@@ -32,63 +32,62 @@
     * test 1: you cannot click any digit
 
 #### 2. addOperation(): 
-    In standard mode:
-##### A. With no operation on display
-        test 1: Click any "binary operation" button, the operation is applied to the curreExpression on display
-##### B. With one operation on display
-        test 1: When there is only one operand on display, the operation replaces the operation on display
-        test 2: When there is two operands on display, the computed result and operation are on display 
+* With no operation on display
+    * test 1: Click any "binary operation" button, the operation is applied to the curreExpression on display
+* With one operation on display
+    * test 1: When there is only one operand on display, the operation replaces the operation on display
+    * test 2: When there is two operands on display, the computed result and operation are on display 
 
-##### A. When the last operation was "digit" (in scientific mode)
-        test 1: Click any "binary operation" button, the operation is applied to the curreExpression on display
-        test 2: After the "equal" button is clicked, the operation is applied to the curreExpression on display
-##### B. When the last operation was "binary operation" (in scientific mode)
-        test 1: Click any "binary operation" button, replaces the previous operation with the current one
-##### C. When the last operation was "unary operation" (in scientific mode)
-        test 1: Click any "binary operation" button, appends the operation to the curreExpression on display
-##### D. When the last operation was "left parenthesis" (in scientific mode)
-        test 1: Click any "binary operation" button, the "binary operation" button is disabled
-##### E. When the last operation was "right parenthesis" (in scientific mode)
-        test 1: Click any "binary operation" button, appends the operation to the currExpression on display
+* When the last operation was "digit" (in scientific mode)
+    * test 1: Click any "binary operation" button, the operation is applied to the curreExpression on display
+    * test 2: After the "equal" button is clicked, the operation is applied to the curreExpression on display
+* When the last operation was "binary operation" (in scientific mode)
+    * test 1: Click any "binary operation" button, replaces the previous operation with the current one
+* When the last operation was "unary operation" (in scientific mode)
+    * test 1: Click any "binary operation" button, appends the operation to the curreExpression on display
+* When the last operation was "left parenthesis" (in scientific mode)
+    * test 1: Click any "binary operation" button, the "binary operation" button is disabled
+* When the last operation was "right parenthesis" (in scientific mode)
+    * test 1: Click any "binary operation" button, appends the operation to the currExpression on display
 
 #### 3. addUnaryOperation():
-##### A. When the last operation was "digit" (in scientific mode)
-        test 1: Click any "unary operation" button, the operation is applied to the last operand 
-        test 2: After the "equal" button is clicked, the "unary operation" is applied to the last operand
-##### B. When the last operation was "binary operation" (in scientific mode)
-        test 1: Click any "unary operation" button, the "unary operation" button is disabled
-##### C. When the last operation was "unary operation", (in scientific mode)
-        test 1: Click any "unary operation" button, the operation is applied to the last "unary operation"
-##### D. When the last operation was "left parenthesis" (in scientific mode)
-        test 1: Click any "unary operation" button, the "unary operation" button is disabled
-##### E. When the last operation was "right parenthesis" (in scientific mode)
-        test 1: Click any "unary operation" button, the operation is applied to the parentheses 
+* When the last operation was "digit" (in scientific mode)
+    * test 1: Click any "unary operation" button, the operation is applied to the last operand 
+    * test 2: After the "equal" button is clicked, the "unary operation" is applied to the last operand
+* When the last operation was "binary operation" (in scientific mode)
+    * test 1: Click any "unary operation" button, the "unary operation" button is disabled
+* When the last operation was "unary operation", (in scientific mode)
+    * test 1: Click any "unary operation" button, the operation is applied to the last "unary operation"
+* When the last operation was "left parenthesis" (in scientific mode)
+    * test 1: Click any "unary operation" button, the "unary operation" button is disabled
+* When the last operation was "right parenthesis" (in scientific mode)
+    * test 1: Click any "unary operation" button, the operation is applied to the parentheses 
 
 #### 4. equal():
-##### A. When the last operation is "binary operation"
-        test 1: Click the "equal" button, the number before the "binary operation" is on display
-##### B. When the last operation is not "binary operation"
-        test 1: Click the "equal" button, the calculation result is on display
-##### C. When the last operation is "left parenthesis"
-        test 1: Click the "equal" button, the "equal" button is disabled
+* When the last operation is "binary operation"
+    test 1: Click the "equal" button, the number before the "binary operation" is on display
+* When the last operation is not "binary operation"
+    test 1: Click the "equal" button, the calculation result is on display
+* When the last operation is "left parenthesis" (in scientific mode)
+    test 1: Click the "equal" button, the "equal" button is disabled
 
 #### 5. addLeftParenthesis():
-##### A. When the last operation is "digit"
-        test 1: Click the "(" button, the "*"(multiplication) operation and "(" is appended to the digit
-##### B. When the last operation is "binary operation"
-        test 1: Click the "(" button, the "*" is appended to the "binary operation"
-##### C. When the last operation is "unary operation"
-        test 1: Click the "(" button, the "x"(multiplication) operation and "(" is appended to the digit
-##### D. When the last operation is "left parenthesis"
-        test 1: Click the "(" button, the "*" is appended to the "left parenthesis"
-##### E. When the last operation is "right parenthesis"
-        test 1: Click the "(" button, the "x"(multiplication) operation and "(" is appended to the digit
+* When the last operation is "digit" (in scientific mode)
+    * test 1: Click the "(" button, the "*"(multiplication) operation and "(" is appended to the digit
+* When the last operation is "binary operation" (in scientific mode)
+    * test 1: Click the "(" button, the "*" is appended to the "binary operation"
+* When the last operation is "unary operation" (in scientific mode)
+    * test 1: Click the "(" button, the "x"(multiplication) operation and "(" is appended to the digit
+* When the last operation is "left parenthesis" (in scientific mode)
+    * test 1: Click the "(" button, the "*" is appended to the "left parenthesis"
+* When the last operation is "right parenthesis" (in scientific mode)
+    * test 1: Click the "(" button, the "x"(multiplication) operation and "(" is appended to the digit
 
 #### 6. addRightParenthesis():
-##### A. When all the "left parenthesis" are closed
-        test 1: Click the ")" button, the ")" button is disabled
-##### B. When all the "left parenthesis" are not closed
-        test 2: Click the "(" button, the ")" is appended to the curreExpression
+* When all the "left parenthesis" are closed (in scientific mode)
+    * test 1: Click the ")" button, the ")" button is disabled
+* When all the "left parenthesis" are not closed (in scientific mode)
+    * test 2: Click the "(" button, the ")" is appended to the curreExpression
 
 ### Memory Related:
 
