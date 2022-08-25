@@ -14,7 +14,7 @@
 * "clear" button are "C", "CE", "DEL"
 
 ### Calculation Related:
-#### 1. appendNumber(): 
+#### A. appendNumber(): 
 * With "0" on display
     * test 1: Click any "digit" button but ".", the digit replaces "0" on display
 * With "." on  display
@@ -31,7 +31,7 @@
 * When "Unary Operation" was clicked (in scientific mode)
     * test 1: you cannot click any digit
 
-#### 2. addOperation(): 
+#### B. addOperation(): 
 * With no operation on display
     * test 1: Click any "binary operation" button, the operation is applied to the curreExpression on display
 * With one operation on display
@@ -50,7 +50,7 @@
 * When the last operation was "right parenthesis" (in scientific mode)
     * test 1: Click any "binary operation" button, appends the operation to the currExpression on display
 
-#### 3. addUnaryOperation():
+#### C. addUnaryOperation():
 * When the last operation was "digit" (in scientific mode)
     * test 1: Click any "unary operation" button, the operation is applied to the last operand 
     * test 2: After the "equal" button is clicked, the "unary operation" is applied to the last operand
@@ -63,15 +63,15 @@
 * When the last operation was "right parenthesis" (in scientific mode)
     * test 1: Click any "unary operation" button, the operation is applied to the parentheses 
 
-#### 4. equal():
+#### D. equal():
 * When the last operation is "binary operation"
-    test 1: Click the "equal" button, the number before the "binary operation" is on display
+    * test 1: Click the "equal" button, the number before the "binary operation" is on display
 * When the last operation is not "binary operation"
-    test 1: Click the "equal" button, the calculation result is on display
+    * test 1: Click the "equal" button, the calculation result is on display
 * When the last operation is "left parenthesis" (in scientific mode)
-    test 1: Click the "equal" button, the "equal" button is disabled
+    * test 1: Click the "equal" button, the "equal" button is disabled
 
-#### 5. addLeftParenthesis():
+#### E. addLeftParenthesis():
 * When the last operation is "digit" (in scientific mode)
     * test 1: Click the "(" button, the "*"(multiplication) operation and "(" is appended to the digit
 * When the last operation is "binary operation" (in scientific mode)
@@ -83,7 +83,7 @@
 * When the last operation is "right parenthesis" (in scientific mode)
     * test 1: Click the "(" button, the "x"(multiplication) operation and "(" is appended to the digit
 
-#### 6. addRightParenthesis():
+#### F. addRightParenthesis():
 * When all the "left parenthesis" are closed (in scientific mode)
     * test 1: Click the ")" button, the ")" button is disabled
 * When all the "left parenthesis" are not closed (in scientific mode)
@@ -91,111 +91,111 @@
 
 ### Memory Related:
 
-#### 1. memoryStore():
-##### A. When there is no number stored in the memory
-        test 1: Click the "MS" button, 
-##### B. When there is one number stored in the memory
+#### A. memoryStore():
+* When there is no number stored in the memory
+    * test 1: Click the "MS" button, 
+* When there is one number stored in the memory
 
-#### 2. memoryAdd():
-##### A. When there is no number stored in the memory
-        test 1: Click the "M+" button. Expected result: 0 in the memory.
-##### B. When there is one number stored in the memory
-        Click the "5" button. Click the "MS" button. Click the "C" button. Click the "1" button. Click the "M+" button. Expected result: 5 changes to 6 in the memory.
+#### B. memoryAdd():
+* When there is no number stored in the memory
+    * test 1: Click the "M+" button. Expected result: 0 in the memory.
+* When there is one number stored in the memory
+    * Click the "5" button. Click the "MS" button. Click the "C" button. Click the "1" button. Click the "M+" button. Expected result: 5 changes to 6 in the memory.
 
-#### 3. memorySubtract():
-##### A. When there is no number stored in the memory.
-        test 1: Click the "M-" button. Expected result: 0 in the memory.
-##### B. When there is one number stored in the memory
-        Click the "5" button. Click the "MS" button. Click the "C" button. Click the "1" button. Click the "M-" button. Expected result: 5 changes to 6 in the memory.
+#### C. memorySubtract():
+* When there is no number stored in the memory.
+    * test 1: Click the "M-" button. Expected result: 0 in the memory.
+* When there is one number stored in the memory
+    * Click the "5" button. Click the "MS" button. Click the "C" button. Click the "1" button. Click the "M-" button. Expected result: 5 changes to 6 in the memory.
 
-#### 4. memoryStore():
-##### A. When there is no number stored in the memory.
-        test 1: Click the "5" button. Click the "MS" button. Expected result: Single number of 5 in the memory.
-##### B. When there is one number stored in the memory.
-        test 1: Repeat the steps for test 1 of part A. Then, press the "C" button. Then, press the "1" button. Then, press the "MS" button. Expected result: 5 and 1 in the stack with 5 second and 1 first.
+#### D. memoryStore():
+* When there is no number stored in the memory.
+    * test 1: Click the "5" button. Click the "MS" button. Expected result: Single number of 5 in the memory.
+* When there is one number stored in the memory.
+    * test 1: Repeat the steps for test 1 of part A. Then, press the "C" button. Then, press the "1" button. Then, press the "MS" button. Expected result: 5 and 1 in the stack with 5 second and 1 first.
 
-#### 5. memoryClear():
-##### A. When there is no number stored in the memory.
+#### E. memoryClear():
+* When there is no number stored in the memory.
         test 1: Click the "MC" button. Expected result: No change.
-##### B. When there is one number stored in the memory.
+* When there is one number stored in the memory.
         test 1: Click the "5" button. Click the "MS" button. Press the "MC" button. Expected result: 5 disappears from the memory.
 
 ### Deletion Related:
 #### 1. DEL():
-##### A. When there is no number in the current expression.
-        test 1: Click the "DEL" button. Expected result: No change.
-##### B. When there is one number in the current expression.
-        test 1. Click the "1" button. Click the "DEL" button. Expected result: 1 appears on the calculator and then is deleted.
-##### C. When there are two numbers in the current expression.
-        test 1. Click the "1" button. Click the "2" button. Click the "DEL" button. Expected result: 1 appears on the calculator, 2 follows it. 2 is deleted, leaving 1 remaining.
-##### D. When there is a number and operator in the current expression.
-        test 1. Click the "1" button. Click the "+" button. Click the "DEL" button. Expected result: 1 appears on the calculator, + follows it. + is deleted, leaving 1 remaining.
+* When there is no number in the current expression.
+    * test 1: Click the "DEL" button. Expected result: No change.
+* When there is one number in the current expression.
+    * test 1. Click the "1" button. Click the "DEL" button. Expected result: 1 appears on the calculator and then is deleted.
+* When there are two numbers in the current expression.
+    * test 1. Click the "1" button. Click the "2" button. Click the "DEL" button. Expected result: 1 appears on the calculator, 2 follows it. 2 is deleted, leaving 1 remaining.
+* When there is a number and operator in the current expression.
+    * test 1. Click the "1" button. Click the "+" button. Click the "DEL" button. Expected result: 1 appears on the calculator, + follows it. + is deleted, leaving 1 remaining.
 
 #### 2. C():
-##### A. When there is no number in the current expression.
-        test 1: Click the "C" button. Expected result: No change.
-##### B. When there is one number in the current expression.
-        test 1. Click the "1" button. Click the "C" button. Expected result: 1 appears on the calculator and then is deleted.
-##### C. When there is one number in the current expression and one in the prevExpression.
-        test 1. Click the "1" button. Click the "=" button. Click the "1" button. Click the "C" button. Expected result: both numbers are deleted.
+* When there is no number in the current expression.
+    * test 1: Click the "C" button. Expected result: No change.
+* When there is one number in the current expression.
+    * test 1. Click the "1" button. Click the "C" button. Expected result: 1 appears on the calculator and then is deleted.
+* When there is one number in the current expression and one in the prevExpression.
+    * test 1. Click the "1" button. Click the "=" button. Click the "1" button. Click the "C" button. Expected result: both numbers are deleted.
 
 #### 3. CE():
-##### A. When there is no number in the current expression.
-        test 1: Click the "C" button. Expected result: No change.
-##### B. When there is one number in the current expression.
-        test 1. Click the "1" button. Click the "C" button. Expected result: 1 appears on the calculator and then is deleted.
-C. When there is one number in the current expression and one in the prevExpression.
-        test 1. Click the "1" button. Click the "=" button. Click the "1" button. Click the "C" button. Expected result: The 1 in the current expression is deleted, the 1 in the prevExpression remains.
+* When there is no number in the current expression.
+    * test 1: Click the "C" button. Expected result: No change.
+* When there is one number in the current expression.
+    * test 1. Click the "1" button. Click the "C" button. Expected result: 1 appears on the calculator and then is deleted.
+* When there is one number in the current expression and one in the prevExpression.
+    * test 1. Click the "1" button. Click the "=" button. Click the "1" button. Click the "C" button. Expected result: The 1 in the current expression is deleted, the 1 in the prevExpression remains.
 
 ## 3. Teammates contributions
 
 ### Jihao Zhang:
 
-    - implemented sciArithmetic
-    - implemented the model of arithmetic
-    - implemented the memory buttons disabled effect
-    - implemented the MS button logic in memoryFunction.js
-    - Binded the scientific calculator to controller(including clear buttons, digit buttons, unary&binary operator buttons and "(" / ")" buttons)
-    - helped designing the test plan for scientific Calculator
+- implemented sciArithmetic
+- implemented the model of arithmetic
+- implemented the memory buttons disabled effect
+- implemented the MS button logic in memoryFunction.js
+- Binded the scientific calculator to controller(including clear buttons, digit buttons, unary&binary operator buttons and "(" / ")" buttons)
+- helped designing the test plan for scientific Calculator
 
 ### Max Zahner:
 
-    - Model for equations in regular (non-scientific calculator)
-    - Current Expression construction
-    - Handled imaginary number errors
-    - Imported and refactored logic to math.js
-    - Handled single operation operands
-    - Modified DEL to work on operation and prevOperand
-    - Modified addOperation to fit with single operand operations
-    - Logic for equal (if no operation and current operand is specified, the previous operation and operand are applied to the leading operand)
-    - Updated memory functions to math.js instead of ordinary js math
+- Model for equations in regular (non-scientific calculator)
+- Current Expression construction
+- Handled imaginary number errors
+- Imported and refactored logic to math.js
+- Handled single operation operands
+- Modified DEL to work on operation and prevOperand
+- Modified addOperation to fit with single operand operations
+- Logic for equal (if no operation and current operand is specified, the previous operation and operand are applied to the leading operand)
+- Updated memory functions to math.js instead of ordinary js math
 
 ### Yiming Liu:
 
-    - CSS for the calculator and scientific mode toggle function
-    - Model the structure of controller, memory functions and the calculator in standard mode
-    - Created constructor of the Calculator and the functions of appendNumber, addOperations, and getCurrNum
-    - Created scientific mode button listener
+- CSS for the calculator and scientific mode toggle function
+- Model the structure of controller, memory functions and the calculator in standard mode
+- Created constructor of the Calculator and the functions of appendNumber, addOperations, and getCurrNum
+- Created scientific mode button listener
 
 ### Yinchu Sun:
 
-    - Created all clear structures in clear.js
-    - Implemented the "C" button (clear all function) in clear.js
-    - Implemented the "+/-" button (negate) listener in clear.js
-    - Implemented the original negate function.
-    - Created ifValid function in controller.js
-    - Keyboard Input function.
-    - Implemented the memoryRecall function in memoryFunction.js
+- Created all clear structures in clear.js
+- Implemented the "C" button (clear all function) in clear.js
+- Implemented the "+/-" button (negate) listener in clear.js
+- Implemented the original negate function.
+- Created ifValid function in controller.js
+- Keyboard Input function.
+- Implemented the memoryRecall function in memoryFunction.js
 
 ### Jeremy Mach:
 
-    - Moved functions to controller.js, clear.js
-    - memoryStore in memoryFunction.js
-    - memoryAdd in memoryFunctions.js
-    - Implemented the initial memory listeners, got changed later
-    - Implemented memory in HTML and CSS
-    - Added various calculations in arithmetic.js
-    - Wrote test cases for memoryStore, memoryClear, CE, C, DEL
+- Moved functions to controller.js, clear.js
+- memoryStore in memoryFunction.js
+- memoryAdd in memoryFunctions.js
+- Implemented the initial memory listeners, got changed later
+- Implemented memory in HTML and CSS
+- Added various calculations in arithmetic.js
+- Wrote test cases for memoryStore, memoryClear, CE, C, DEL
 
 
 ## 4. Keyboard Button
