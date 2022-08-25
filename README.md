@@ -1,7 +1,7 @@
 # Calculator App
-## About
 This is a functional calculator mimicking the behavior of Window’s calculator using Vanilla JavaScript, aspiring to practice the use of Test-driven Development and JavaScript.
-Built by a team of 5 in OSU CSE3901 course, following Agile practices and leveraged Test-driven Development with 100+ test cases to robustify the app.
+
+It is built by a team of 5 in OSU CSE3901 course, following Agile practices and leveraged Test-driven Development with 100+ test cases to robustify the app.
 
 ## How to Run
 Open interface.html in file browser. Use GUI on Firefox Browser in Ubuntu VM
@@ -199,7 +199,7 @@ Open interface.html in file browser. Use GUI on Firefox Browser in Ubuntu VM
 - Wrote test cases for memoryStore, memoryClear, CE, C, DEL
 
 
-## Keyboard Button
+## Keyboard Buttons
 
 | Press this key | To do this |
 | --- | --- |
