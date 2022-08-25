@@ -1,9 +1,12 @@
 # Calculator App
+## About
+This is a functional calculator mimicking the behavior of Window’s calculator using Vanilla JavaScript, aspiring to practice the use of Test-driven Development and JavaScript.
+Built by a team of 5 in OSU CSE3901 course, following Agile practices and leveraged Test-driven Development with 100+ test cases to robustify the app.
 
-## 1. How to Run:
-    Open interface.html in file browser. Use GUI on Firefox Browser in Ubuntu VM
+## How to Run
+Open interface.html in file browser. Use GUI on Firefox Browser in Ubuntu VM
 
-## 2. Test Plan
+## Test Plan
 
 ### A. Term explanation:
 - "digit" buttons are 0-9 and "."
@@ -145,7 +148,7 @@
    - When there is one number in the current expression and one in the prevExpression.
      - test 1. Click the "1" button. Click the "=" button. Click the "1" button. Click the "C" button. Expected result: The 1 in the current expression is deleted, the 1 in the prevExpression remains.
 
-## 3. Teammates contributions
+## Teammates contributions
 
 ### Jihao Zhang:
 
@@ -196,7 +199,7 @@
 - Wrote test cases for memoryStore, memoryClear, CE, C, DEL
 
 
-## 4. Keyboard Button
+## Keyboard Button
 
 | Press this key | To do this |
 | --- | --- |
