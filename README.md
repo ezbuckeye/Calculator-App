@@ -6,12 +6,12 @@
 ## 2. Test Plan
 
 ### Term explanation:
-    "digit" buttons are 0-9 and "."
-    "binary operation" buttons are "+", "-", x", "/"
-    "unary operation" buttons are "+/-", "x^2", "|x|", "2√x", "1/x", "%", "log", "ln", "n!"
-    "equal" button is "="
-    "memory" button are "MS", "M+", "M-", "MC", "MR"
-    "clear" button are "C", "CE", "DEL"
+    - "digit" buttons are 0-9 and "."
+    - "binary operation" buttons are "+", "-", x", "/"
+    - "unary operation" buttons are "+/-", "x^2", "|x|", "2√x", "1/x", "%", "log", "ln", "n!"
+    - "equal" button is "="
+    - "memory" button are "MS", "M+", "M-", "MC", "MR"
+    - "clear" button are "C", "CE", "DEL"
 
 ### Calculation Related:
 #### 1. appendNumber(): 
@@ -145,7 +145,7 @@
         test 1: Click the "C" button. Expected result: No change.
 ##### B. When there is one number in the current expression.
         test 1. Click the "1" button. Click the "C" button. Expected result: 1 appears on the calculator and then is deleted.
-##### C. When there is one number in the current expression and one in the prevExpression.
+C. When there is one number in the current expression and one in the prevExpression.
         test 1. Click the "1" button. Click the "=" button. Click the "1" button. Click the "C" button. Expected result: The 1 in the current expression is deleted, the 1 in the prevExpression remains.
 
 ## 3. Teammates contributions
