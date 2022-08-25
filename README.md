@@ -6,30 +6,30 @@
 ## 2. Test Plan
 
 ### Term explanation:
-    - "digit" buttons are 0-9 and "."
-    - "binary operation" buttons are "+", "-", x", "/"
-    - "unary operation" buttons are "+/-", "x^2", "|x|", "2√x", "1/x", "%", "log", "ln", "n!"
-    - "equal" button is "="
-    - "memory" button are "MS", "M+", "M-", "MC", "MR"
-    - "clear" button are "C", "CE", "DEL"
+    * "digit" buttons are 0-9 and "."
+    * "binary operation" buttons are "+", "-", x", "/"
+    * "unary operation" buttons are "+/-", "x^2", "|x|", "2√x", "1/x", "%", "log", "ln", "n!"
+    * "equal" button is "="
+    * "memory" button are "MS", "M+", "M-", "MC", "MR"
+    * "clear" button are "C", "CE", "DEL"
 
 ### Calculation Related:
 #### 1. appendNumber(): 
-    A. With "0" on display
-        test 1: Click any "digit" button but ".", the digit replaces "0" on display
-##### B. With "." on  display
-        test 1: Click "." "digit" button, the display area doesn't change
-        test 2: Click any "digit" button but ".", the digit is appended to ".", e.g., ".1"
-##### C. With any digit other than "0" and "." on display
-        test 1: Click any "digit" button, the digit is appended to the number on display
+* With "0" on display
+    * test 1: Click any "digit" button but ".", the digit replaces "0" on display
+* With "." on  display
+    * test 1: Click "." "digit" button, the display area doesn't change
+    * test 2: Click any "digit" button but ".", the digit is appended to ".", e.g., ".1"
+* With any digit other than "0" and "." on display
+    * test 1: Click any "digit" button, the digit is appended to the number on display
                 e.g., if "12" is on display, click digit button "3", "123" is on display
                     if "1" is on display, click digit button ".", "1." is on display
-##### D. When "Binary Operation" was clicked
-        test 1: Click any "digit" button, the digit is on display
-##### E. When "equal" button was clicked
-        test 1: Click any "digit" button, currExpression area displays the digit and the prevExpression is "0"
-##### F. When "Unary Operation" was clicked (in scientific mode)
-        test 1: you cannot click any digit
+* When "Binary Operation" was clicked
+    * test 1: Click any "digit" button, the digit is on display
+* When "equal" button was clicked
+    * test 1: Click any "digit" button, currExpression area displays the digit and the prevExpression is "0"
+* When "Unary Operation" was clicked (in scientific mode)
+    * test 1: you cannot click any digit
 
 #### 2. addOperation(): 
     In standard mode:
