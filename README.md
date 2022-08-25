@@ -4,7 +4,7 @@ This is a functional calculator mimicking the behavior of Window’s calculator 
 It is built by a team of 5 in OSU CSE3901 course, following Agile practices and leveraged Test-driven Development with 100+ test cases to robustify the app.
 
 ## Screenshots
-<div align="center">
+<div>
     <img src="/screenshots/basic.png" width="350px"</img> 
     <img src="/screenshots/scientific.png" width="450px"</img> 
 </div>
