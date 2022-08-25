@@ -145,7 +145,7 @@
    - When there is one number in the current expression and one in the prevExpression.
      - test 1. Click the "1" button. Click the "=" button. Click the "1" button. Click the "C" button. Expected result: The 1 in the current expression is deleted, the 1 in the prevExpression remains.
 
-4. Teammates contributions
+## 3. Teammates contributions
 
 ### Jihao Zhang:
 
