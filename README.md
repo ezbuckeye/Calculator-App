@@ -15,7 +15,7 @@
 
 ### Calculation Related:
 #### 1. appendNumber(): 
-##### A. With "0" on display
+    A. With "0" on display
         test 1: Click any "digit" button but ".", the digit replaces "0" on display
 ##### B. With "." on  display
         test 1: Click "." "digit" button, the display area doesn't change
