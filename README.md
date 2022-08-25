@@ -5,7 +5,7 @@
 
 ## 2. Test Plan
 
-### Term explanation:
+### A. Term explanation:
 * "digit" buttons are 0-9 and "."
 * "binary operation" buttons are "+", "-", x", "/"
 * "unary operation" buttons are "+/-", "x^2", "|x|", "2√x", "1/x", "%", "log", "ln", "n!"
@@ -13,16 +13,16 @@
 * "memory" button are "MS", "M+", "M-", "MC", "MR"
 * "clear" button are "C", "CE", "DEL"
 
-### Calculation Related:
-#### A. appendNumber(): 
+### B. Calculation Related:
+#### a. appendNumber(): 
 * With "0" on display
     * test 1: Click any "digit" button but ".", the digit replaces "0" on display
 * With "." on  display
     * test 1: Click "." "digit" button, the display area doesn't change
     * test 2: Click any "digit" button but ".", the digit is appended to ".", e.g., ".1"
 * With any digit other than "0" and "." on display
-    * test 1: Click any "digit" button, the digit is appended to the number on display
-                e.g., if "12" is on display, click digit button "3", "123" is on display
+    * test 1: Click any "digit" button, the digit is appended to the number on display. 
+                e.g., if "12" is on display, click digit button "3", "123" is on display. 
                     if "1" is on display, click digit button ".", "1." is on display
 * When "Binary Operation" was clicked
     * test 1: Click any "digit" button, the digit is on display
@@ -31,13 +31,12 @@
 * When "Unary Operation" was clicked (in scientific mode)
     * test 1: you cannot click any digit
 
-#### B. addOperation(): 
+#### b. addOperation(): 
 * With no operation on display
     * test 1: Click any "binary operation" button, the operation is applied to the curreExpression on display
 * With one operation on display
     * test 1: When there is only one operand on display, the operation replaces the operation on display
     * test 2: When there is two operands on display, the computed result and operation are on display 
-
 * When the last operation was "digit" (in scientific mode)
     * test 1: Click any "binary operation" button, the operation is applied to the curreExpression on display
     * test 2: After the "equal" button is clicked, the operation is applied to the curreExpression on display
@@ -50,7 +49,7 @@
 * When the last operation was "right parenthesis" (in scientific mode)
     * test 1: Click any "binary operation" button, appends the operation to the currExpression on display
 
-#### C. addUnaryOperation():
+#### c. addUnaryOperation():
 * When the last operation was "digit" (in scientific mode)
     * test 1: Click any "unary operation" button, the operation is applied to the last operand 
     * test 2: After the "equal" button is clicked, the "unary operation" is applied to the last operand
@@ -63,7 +62,7 @@
 * When the last operation was "right parenthesis" (in scientific mode)
     * test 1: Click any "unary operation" button, the operation is applied to the parentheses 
 
-#### D. equal():
+#### d. equal():
 * When the last operation is "binary operation"
     * test 1: Click the "equal" button, the number before the "binary operation" is on display
 * When the last operation is not "binary operation"
@@ -71,7 +70,7 @@
 * When the last operation is "left parenthesis" (in scientific mode)
     * test 1: Click the "equal" button, the "equal" button is disabled
 
-#### E. addLeftParenthesis():
+#### e. addLeftParenthesis():
 * When the last operation is "digit" (in scientific mode)
     * test 1: Click the "(" button, the "*"(multiplication) operation and "(" is appended to the digit
 * When the last operation is "binary operation" (in scientific mode)
@@ -83,45 +82,44 @@
 * When the last operation is "right parenthesis" (in scientific mode)
     * test 1: Click the "(" button, the "x"(multiplication) operation and "(" is appended to the digit
 
-#### F. addRightParenthesis():
+#### f. addRightParenthesis():
 * When all the "left parenthesis" are closed (in scientific mode)
     * test 1: Click the ")" button, the ")" button is disabled
 * When all the "left parenthesis" are not closed (in scientific mode)
     * test 2: Click the "(" button, the ")" is appended to the curreExpression
 
-### Memory Related:
-
-#### A. memoryStore():
+### C. Memory Related:
+#### a. memoryStore():
 * When there is no number stored in the memory
     * test 1: Click the "MS" button, 
 * When there is one number stored in the memory
 
-#### B. memoryAdd():
+#### b. memoryAdd():
 * When there is no number stored in the memory
     * test 1: Click the "M+" button. Expected result: 0 in the memory.
 * When there is one number stored in the memory
     * Click the "5" button. Click the "MS" button. Click the "C" button. Click the "1" button. Click the "M+" button. Expected result: 5 changes to 6 in the memory.
 
-#### C. memorySubtract():
+#### c. memorySubtract():
 * When there is no number stored in the memory.
     * test 1: Click the "M-" button. Expected result: 0 in the memory.
 * When there is one number stored in the memory
     * Click the "5" button. Click the "MS" button. Click the "C" button. Click the "1" button. Click the "M-" button. Expected result: 5 changes to 6 in the memory.
 
-#### D. memoryStore():
+#### d. memoryStore():
 * When there is no number stored in the memory.
     * test 1: Click the "5" button. Click the "MS" button. Expected result: Single number of 5 in the memory.
 * When there is one number stored in the memory.
     * test 1: Repeat the steps for test 1 of part A. Then, press the "C" button. Then, press the "1" button. Then, press the "MS" button. Expected result: 5 and 1 in the stack with 5 second and 1 first.
 
-#### E. memoryClear():
+#### e. memoryClear():
 * When there is no number stored in the memory.
         test 1: Click the "MC" button. Expected result: No change.
 * When there is one number stored in the memory.
         test 1: Click the "5" button. Click the "MS" button. Press the "MC" button. Expected result: 5 disappears from the memory.
 
-### Deletion Related:
-#### 1. DEL():
+### D. Deletion Related:
+#### a. DEL():
 * When there is no number in the current expression.
     * test 1: Click the "DEL" button. Expected result: No change.
 * When there is one number in the current expression.
@@ -131,7 +129,7 @@
 * When there is a number and operator in the current expression.
     * test 1. Click the "1" button. Click the "+" button. Click the "DEL" button. Expected result: 1 appears on the calculator, + follows it. + is deleted, leaving 1 remaining.
 
-#### 2. C():
+#### b. C():
 * When there is no number in the current expression.
     * test 1: Click the "C" button. Expected result: No change.
 * When there is one number in the current expression.
@@ -139,7 +137,7 @@
 * When there is one number in the current expression and one in the prevExpression.
     * test 1. Click the "1" button. Click the "=" button. Click the "1" button. Click the "C" button. Expected result: both numbers are deleted.
 
-#### 3. CE():
+#### c. CE():
 * When there is no number in the current expression.
     * test 1: Click the "C" button. Expected result: No change.
 * When there is one number in the current expression.
