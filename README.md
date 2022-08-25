@@ -14,7 +14,7 @@
 * "clear" button are "C", "CE", "DEL"
 
 ### B. Calculation Related:
-#### a. appendNumber(): 
+1. appendNumber(): 
 * With "0" on display
     * test 1: Click any "digit" button but ".", the digit replaces "0" on display
 * With "." on  display
@@ -31,7 +31,7 @@
 * When "Unary Operation" was clicked (in scientific mode)
     * test 1: you cannot click any digit
 
-#### b. addOperation(): 
+2. addOperation(): 
 * With no operation on display
     * test 1: Click any "binary operation" button, the operation is applied to the curreExpression on display
 * With one operation on display
@@ -49,7 +49,7 @@
 * When the last operation was "right parenthesis" (in scientific mode)
     * test 1: Click any "binary operation" button, appends the operation to the currExpression on display
 
-#### c. addUnaryOperation():
+3. addUnaryOperation():
 * When the last operation was "digit" (in scientific mode)
     * test 1: Click any "unary operation" button, the operation is applied to the last operand 
     * test 2: After the "equal" button is clicked, the "unary operation" is applied to the last operand
@@ -62,7 +62,7 @@
 * When the last operation was "right parenthesis" (in scientific mode)
     * test 1: Click any "unary operation" button, the operation is applied to the parentheses 
 
-#### d. equal():
+4. equal():
 * When the last operation is "binary operation"
     * test 1: Click the "equal" button, the number before the "binary operation" is on display
 * When the last operation is not "binary operation"
@@ -70,7 +70,7 @@
 * When the last operation is "left parenthesis" (in scientific mode)
     * test 1: Click the "equal" button, the "equal" button is disabled
 
-#### e. addLeftParenthesis():
+5. addLeftParenthesis():
 * When the last operation is "digit" (in scientific mode)
     * test 1: Click the "(" button, the "*"(multiplication) operation and "(" is appended to the digit
 * When the last operation is "binary operation" (in scientific mode)
@@ -82,7 +82,7 @@
 * When the last operation is "right parenthesis" (in scientific mode)
     * test 1: Click the "(" button, the "x"(multiplication) operation and "(" is appended to the digit
 
-#### f. addRightParenthesis():
+6. addRightParenthesis():
 * When all the "left parenthesis" are closed (in scientific mode)
     * test 1: Click the ")" button, the ")" button is disabled
 * When all the "left parenthesis" are not closed (in scientific mode)
