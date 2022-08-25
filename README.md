@@ -89,63 +89,63 @@
      - test 2: Click the "(" button, the ")" is appended to the curreExpression
 
 ### C. Memory Related:
-#### a. memoryStore():
-- When there is no number stored in the memory
-    - test 1: Click the "MS" button, 
-- When there is one number stored in the memory
+1. memoryStore():
+   - When there is no number stored in the memory
+     - test 1: Click the "MS" button, 
+   - When there is one number stored in the memory
 
-#### b. memoryAdd():
-- When there is no number stored in the memory
-    - test 1: Click the "M+" button. Expected result: 0 in the memory.
-- When there is one number stored in the memory
-    - Click the "5" button. Click the "MS" button. Click the "C" button. Click the "1" button. Click the "M+" button. Expected result: 5 changes to 6 in the memory.
+2. memoryAdd():
+   - When there is no number stored in the memory
+     - test 1: Click the "M+" button. Expected result: 0 in the memory.
+   - When there is one number stored in the memory
+     - Click the "5" button. Click the "MS" button. Click the "C" button. Click the "1" button. Click the "M+" button. Expected result: 5 changes to 6 in the memory.
 
-#### c. memorySubtract():
-- When there is no number stored in the memory.
-    - test 1: Click the "M-" button. Expected result: 0 in the memory.
-- When there is one number stored in the memory
-    - Click the "5" button. Click the "MS" button. Click the "C" button. Click the "1" button. Click the "M-" button. Expected result: 5 changes to 6 in the memory.
+3. memorySubtract():
+   - When there is no number stored in the memory.
+     - test 1: Click the "M-" button. Expected result: 0 in the memory.
+   - When there is one number stored in the memory
+     - Click the "5" button. Click the "MS" button. Click the "C" button. Click the "1" button. Click the "M-" button. Expected result: 5 changes to 6 in the memory.
 
-#### d. memoryStore():
-- When there is no number stored in the memory.
-    - test 1: Click the "5" button. Click the "MS" button. Expected result: Single number of 5 in the memory.
-- When there is one number stored in the memory.
-    - test 1: Repeat the steps for test 1 of part A. Then, press the "C" button. Then, press the "1" button. Then, press the "MS" button. Expected result: 5 and 1 in the stack with 5 second and 1 first.
+4. memoryStore():
+   - When there is no number stored in the memory.
+     - test 1: Click the "5" button. Click the "MS" button. Expected result: Single number of 5 in the memory.
+   - When there is one number stored in the memory.
+     - test 1: Repeat the steps for test 1 of part A. Then, press the "C" button. Then, press the "1" button. Then, press the "MS" button. Expected result: 5 and 1 in the stack with 5 second and 1 first.
 
-#### e. memoryClear():
-- When there is no number stored in the memory.
-        test 1: Click the "MC" button. Expected result: No change.
-- When there is one number stored in the memory.
-        test 1: Click the "5" button. Click the "MS" button. Press the "MC" button. Expected result: 5 disappears from the memory.
+5. memoryClear():
+   - When there is no number stored in the memory.
+     - test 1: Click the "MC" button. Expected result: No change.
+   - When there is one number stored in the memory.
+     - test 1: Click the "5" button. Click the "MS" button. Press the "MC" button. Expected result: 5 disappears from the memory.
 
 ### D. Deletion Related:
-#### a. DEL():
-- When there is no number in the current expression.
-    - test 1: Click the "DEL" button. Expected result: No change.
-- When there is one number in the current expression.
-    - test 1. Click the "1" button. Click the "DEL" button. Expected result: 1 appears on the calculator and then is deleted.
-- When there are two numbers in the current expression.
-    - test 1. Click the "1" button. Click the "2" button. Click the "DEL" button. Expected result: 1 appears on the calculator, 2 follows it. 2 is deleted, leaving 1 remaining.
-- When there is a number and operator in the current expression.
-    - test 1. Click the "1" button. Click the "+" button. Click the "DEL" button. Expected result: 1 appears on the calculator, + follows it. + is deleted, leaving 1 remaining.
+1. DEL():
+   - When there is no number in the current expression.
+     - test 1: Click the "DEL" button. Expected result: No change.
+   - When there is one number in the current expression.
+     - test 1. Click the "1" button. Click the "DEL" button. Expected result: 1 appears on the calculator and then is deleted.
+   - When there are two numbers in the current expression.
+     - test 1. Click the "1" button. Click the "2" button. Click the "DEL" button. Expected result: 1 appears on the calculator, 2 follows it. 2 is deleted, leaving 1 remaining.
+   - When there is a number and operator in the current expression.
+     - test 1. Click the "1" button. Click the "+" button. Click the "DEL" button. Expected result: 1 appears on the calculator, + follows it. + is deleted, leaving 1 remaining.
 
-#### b. C():
-- When there is no number in the current expression.
-    - test 1: Click the "C" button. Expected result: No change.
-- When there is one number in the current expression.
-    - test 1. Click the "1" button. Click the "C" button. Expected result: 1 appears on the calculator and then is deleted.
-- When there is one number in the current expression and one in the prevExpression.
-    - test 1. Click the "1" button. Click the "=" button. Click the "1" button. Click the "C" button. Expected result: both numbers are deleted.
+2. C():
+   - When there is no number in the current expression.
+     - test 1: Click the "C" button. Expected result: No change.
+   - When there is one number in the current expression.
+     - test 1. Click the "1" button. Click the "C" button. Expected result: 1 appears on the calculator and then is deleted.
+   - When there is one number in the current expression and one in the prevExpression.
+     - test 1. Click the "1" button. Click the "=" button. Click the "1" button. Click the "C" button. Expected result: both numbers are deleted.
 
-#### c. CE():
-- When there is no number in the current expression.
-    - test 1: Click the "C" button. Expected result: No change.
-- When there is one number in the current expression.
-    - test 1. Click the "1" button. Click the "C" button. Expected result: 1 appears on the calculator and then is deleted.
-- When there is one number in the current expression and one in the prevExpression.
-    - test 1. Click the "1" button. Click the "=" button. Click the "1" button. Click the "C" button. Expected result: The 1 in the current expression is deleted, the 1 in the prevExpression remains.
+3. CE():
+   - When there is no number in the current expression.
+     - test 1: Click the "C" button. Expected result: No change.
+   - When there is one number in the current expression.
+     - test 1. Click the "1" button. Click the "C" button. Expected result: 1 appears on the calculator and then is deleted.
+   - When there is one number in the current expression and one in the prevExpression.
+     - test 1. Click the "1" button. Click the "=" button. Click the "1" button. Click the "C" button. Expected result: The 1 in the current expression is deleted, the 1 in the prevExpression remains.
 
-## 3. Teammates contributions
+4. Teammates contributions
 
 ### Jihao Zhang:
 
