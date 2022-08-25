@@ -3,8 +3,9 @@ This is a functional calculator mimicking the behavior of Window’s calculator 
 
 It is built by a team of 5 in OSU CSE3901 course, following Agile practices and leveraged Test-driven Development with 100+ test cases to robustify the app.
 
-## How to Run
-Open interface.html in file browser. Use GUI on Firefox Browser in Ubuntu VM
+## Screenshots
+![Basic Mode](/screenshots/basic.jpg?raw=true "Basic Mode")
+![Scientific Mode](/screenshots/scientific.jpg?raw=true "Scientific Mode")
 
 ## Test Plan
 
